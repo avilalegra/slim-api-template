@@ -1,0 +1,28 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Scheduler\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Scheduler\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "slim/slim": "4.*",
+    "guzzlehttp/psr7": "^2",
+    "php-di/slim-bridge": "^3.3",
+    "doctrine/orm": "^2.14",
+    "vlucas/phpdotenv": "^5.5",
+    "symfony/cache": "^6.2",
+    "rakit/validation": "^1.4"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.2",
+    "phpunit/phpunit": "^10.0"
+  },
+  "scripts": {
+    "dev-server": "php -t public -S localhost:8000"
+  }
+}
